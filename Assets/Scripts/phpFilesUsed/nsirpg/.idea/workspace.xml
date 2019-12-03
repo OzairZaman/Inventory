@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b7c17b44-60a0-414e-a55d-b2f5cde835b5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nsirpg@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nsirpg@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nsirpg@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="nsirpg: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="XAMPP PHP 7.3.11" />
+  <component name="ProjectId" id="1UH23ns8uLz1msa1W6qtjA4Im9W" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php/php.exe" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RunManager">
+    <configuration name="InsertUser.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/InsertUser.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.InsertUser.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:nsirpg@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:nsirpg@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4aaad137" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7c17b44-60a0-414e-a55d-b2f5cde835b5" name="Default Changelist" comment="" />
+      <created>1574999003312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574999003312</updated>
+      <workItem from="1574999005326" duration="34577000" />
+      <workItem from="1575283185915" duration="9522000" />
+      <workItem from="1575358439426" duration="11224000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="841" y="305" key="#CLI_Interpreters" timestamp="1575002762454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="841" y="305" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1575002762454" />
+    <state x="510" y="217" key="#SQL_Dialects" timestamp="1575064142921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="510" y="217" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1575064142921" />
+    <state x="770" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575005715124">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="770" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575005715124" />
+    <state x="1041" y="405" key="FileChooserDialogImpl" timestamp="1575003130921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1041" y="405" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575003130921" />
+    <state width="1877" height="326" key="GridCell.Tab.0.bottom" timestamp="1575203811863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575203811863" />
+    <state width="1877" height="326" key="GridCell.Tab.0.center" timestamp="1575203811863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575203811863" />
+    <state width="1877" height="326" key="GridCell.Tab.0.left" timestamp="1575203811863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575203811863" />
+    <state width="1877" height="326" key="GridCell.Tab.0.right" timestamp="1575203811863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575203811863" />
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom" timestamp="1575203811863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575203811863" />
+    <state width="1877" height="326" key="GridCell.Tab.1.center" timestamp="1575203811863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575203811863" />
+    <state width="1877" height="326" key="GridCell.Tab.1.left" timestamp="1575203811863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575203811863" />
+    <state width="1877" height="326" key="GridCell.Tab.1.right" timestamp="1575203811863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575203811863" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1575005777522">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1575005777522" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1575368144181">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575368144181" />
+    <state x="614" y="232" key="SettingsEditor" timestamp="1575003580742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="614" y="232" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575003580742" />
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575358439438">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575358439438" />
+    <state x="581" y="279" width="672" height="678" key="search.everywhere.popup" timestamp="1575086969449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="581" y="279" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575086969449" />
+  </component>
+</project>
