@@ -11,6 +11,9 @@ public class SaveItems : MonoBehaviour
     //what do we save
     string user; 
     string ItemsTosave; // we will concatinate all item ID from the inv List
+    public GameObject alert;
+    public RawImage saved;
+    string s = "";
 
     private void Start()
     {
@@ -33,8 +36,21 @@ public class SaveItems : MonoBehaviour
 
         yield return webRequest.SendWebRequest();
 
-        string s = webRequest.downloadHandler.text;
+        s = webRequest.downloadHandler.text;
         Debug.Log(s);
+        if (s=="1")
+        {
+            Debug.Log("INSIDE");
+            //SaveIcon
+            saved.gameObject.SetActive(true);
+            GameObject.FindGameObjectWithTag("SaveIcon").GetComponent<RawImage>().CrossFadeAlpha(0, 0.75f, true);
+            yield return new WaitForSeconds(0.75f);
+            saved.gameObject.SetActive(false);
+
+
+            //saved.CrossFadeAlpha(0, 2, false);
+        }
+        
     }
 
     public void StringifyTheItems()

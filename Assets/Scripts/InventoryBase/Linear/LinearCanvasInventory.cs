@@ -8,19 +8,19 @@ public class LinearCanvasInventory : MonoBehaviour
 
     #region Variables
     public static List<Item> inv = new List<Item>();
+    public static int userSelected = 0; // represents the index of the button user clicks on
+    private int[] ItemIdPool = new int[27];
+
     [Header("Inventory Parts")]
     public GameObject invPanel;
     public GameObject buttonPrefab;
-    //public GameObject uiMainIcon;
-    //public GameObject uiItemName;
-    //public GameObject uiItemDesc;
-
     public RectTransform parent;
+
     [Header("Inventory Properties")]
     public bool toggleTogglable = false; // bool to determine if we show / hide inventory panel
-    public int maxInventorySpace = 0;
+    public static int maxInventorySpace = 0;
     //this will match the inventory index. will be used for instanting the item in the correspoding  inv[] to the button we click
-    public int selected = 0; 
+     
     
 
     [System.Serializable]
@@ -40,7 +40,22 @@ public class LinearCanvasInventory : MonoBehaviour
     #region Internal
     void Start()
     {
-
+        // create a pool of 30 item IDs to randomly chooce from
+        // to simulate "picking" up stuff into our invetory. 
+        //create item has 10 categories wtih 3 items in each
+        // 100 - 102
+        // ...
+        // 900 - 902
+        // you might be wondering what happened to 000 - 002 ? Kidnapped by pirates :( 
+        int slot = 0;
+        for (int i = 1; i < 10; i++)
+        {
+            for (int x = 0; x < 3; x++)
+            {
+                ItemIdPool[slot] = (i*100) + x;
+                slot++;
+            }
+        }
     }
 
 
@@ -53,7 +68,7 @@ public class LinearCanvasInventory : MonoBehaviour
             ShowInv();
         }
 
-        if (toggleTogglable && Input.GetKeyDown(KeyCode.I) && maxInventorySpace < 9)
+        if (toggleTogglable && Input.GetKeyDown(KeyCode.I) && maxInventorySpace < 10)
         {
             AddItemToInventory();
             maxInventorySpace++;
@@ -92,7 +107,7 @@ public class LinearCanvasInventory : MonoBehaviour
     /// </summary>
     public void AddItemToInventory()
     {
-        inv.Add(ItemData.CreateItem(Random.Range(400, 403)));
+        inv.Add(ItemData.CreateItem(ItemIdPool[Random.Range(1, 28)])); //Random.Range(400, 403);
         int currentSlot = inv.Count - 1;
         GameObject button = Instantiate(buttonPrefab, parent); //parent is the Gridlaout object
         button.GetComponent<SelectButton>().index = currentSlot;
@@ -125,7 +140,7 @@ public class LinearCanvasInventory : MonoBehaviour
             if (equipmentSlots[slot].curItem == null)
             {
                 //if epmty show equip button
-                Debug.Log("Equip!!");
+                Debug.Log("Use!!");
             }
             else
             {
@@ -136,7 +151,7 @@ public class LinearCanvasInventory : MonoBehaviour
         else
         {
             //else its not empty but different item
-            Debug.Log("Destroy then Equip!!");
+            Debug.Log("Destroy then use!!");
         }
 
     }

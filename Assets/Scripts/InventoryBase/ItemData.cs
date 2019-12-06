@@ -18,44 +18,44 @@ public static class ItemData
         switch (itemID)
         {
             #region Ingredient 000-099
-            case 000:
-                _name = "Acorn";
-                _description = "Just Acorn";
-                _amount = 1;
-                _value = 1;
-                _type = ItemType.Ingredient;
-                //NOTE Dont forget to change the texture type of the Icon sprite in the inspector into "Editor GUI and Editor GUI"(because we are using hard coding)
-                _icon = "Ingredient/Acorn";
-                //NOTE Change the name of the icon name accordingly
-                _mesh = "Ingredient/Acorn";
-                _damage = 0;
-                _armour = 0;
-                _heal = 0;
-                break;
-            case 001:
-                _name = "Mushroom";
-                _description = "Red Colored Mushroom that is common in the area";
-                _amount = 1;
-                _value = 3;
-                _type = ItemType.Ingredient;
-                _icon = "Ingredient/Mushroom";
-                _mesh = "Ingredient/Mushroom";
-                _damage = 0;
-                _armour = 0;
-                _heal = 0;
-                break;
-            case 002:
-                _name = "Leaf";
-                _description = "Green Leaf that can be found in every season";
-                _amount = 1;
-                _value = 2;
-                _type = ItemType.Ingredient;
-                _icon = "Ingredient/Leaf";
-                _mesh = "Ingredient/Leaf";
-                _damage = 0;
-                _armour = 0;
-                _heal = 0;
-                break;
+            //case 000:
+            //    _name = "Acorn";
+            //    _description = "Just Acorn";
+            //    _amount = 1;
+            //    _value = 1;
+            //    _type = ItemType.Ingredient;
+            //    //NOTE Dont forget to change the texture type of the Icon sprite in the inspector into "Editor GUI and Editor GUI"(because we are using hard coding)
+            //    _icon = "Ingredient/Acorn";
+            //    //NOTE Change the name of the icon name accordingly
+            //    _mesh = "Ingredient/Acorn";
+            //    _damage = 0;
+            //    _armour = 0;
+            //    _heal = 0;
+            //    break;
+            //case 001:
+            //    _name = "Mushroom";
+            //    _description = "Red Colored Mushroom that is common in the area";
+            //    _amount = 1;
+            //    _value = 3;
+            //    _type = ItemType.Ingredient;
+            //    _icon = "Ingredient/Mushroom";
+            //    _mesh = "Ingredient/Mushroom";
+            //    _damage = 0;
+            //    _armour = 0;
+            //    _heal = 0;
+            //    break;
+            //case 002:
+            //    _name = "Leaf";
+            //    _description = "Green Leaf that can be found in every season";
+            //    _amount = 1;
+            //    _value = 2;
+            //    _type = ItemType.Ingredient;
+            //    _icon = "Ingredient/Leaf";
+            //    _mesh = "Ingredient/Leaf";
+            //    _damage = 0;
+            //    _armour = 0;
+            //    _heal = 0;
+            //    break;
             #endregion
             #region Potion 100-199
             case 100:

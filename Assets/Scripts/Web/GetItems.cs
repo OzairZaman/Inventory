@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
-//using TMPro; // for texmesh pro shit
-//using UnityEngine.SceneManagement;
-//using System.IO;
-using SimpleJSON;
+//using SimpleJSON;
 using System.Linq;
 
 public class GetItems : MonoBehaviour
@@ -15,6 +12,7 @@ public class GetItems : MonoBehaviour
     string user;
     public GameObject buttonPrefab;
     public RectTransform parent;
+    string httpheader = "";
     public string[] returnedItems;
 
     #region Internal
@@ -44,44 +42,34 @@ public class GetItems : MonoBehaviour
         UnityWebRequest webRequest = UnityWebRequest.Post(createUserURL, form);
 
         yield return webRequest.SendWebRequest();
-        //Debug.Log(webRequest.downloadHandler.text);
 
         //we want to convert the shit we got from our database to a JSON object
         //string jsonString = webRequest.downloadHandler.text;
         //JSONArray jsonArray = JSON.Parse(jsonString) as JSONArray;
         //Debug.Log(jsonArray[0].AsObject.Count);
 
-        string s = webRequest.downloadHandler.text;
-        //Debug.Log(s.Length);
-        IEnumerable<string> theItems = Split(s, 3);
-        string[] myarray = theItems.ToArray();
-
-        for (int i = 0; i < myarray.Length; i++)
+        httpheader = webRequest.downloadHandler.text;
+        if (httpheader.Length > 3)
         {
-            int id = 0;
-            if (!int.TryParse(myarray[i], out id))
+            returnedItems = Split(httpheader, 3).ToArray(); //(old code) IEnumerable<string> theItems | string[] myarray = theItems.ToArray();
+
+
+            for (int i = 0; i < returnedItems.Length; i++)
             {
-                //if shit went wrong
+                int id = 0;
+                if (!int.TryParse(returnedItems[i], out id))
+                {
+                    //if shit went wrong
+                }
+
+                LinearCanvasInventory.inv.Add(ItemData.CreateItem(id));
+                int currentSlot = LinearCanvasInventory.inv.Count - 1;
+                GameObject button = Instantiate(buttonPrefab, parent) as GameObject; //parent is the Gridlaout object
+                button.GetComponent<SelectButton>().index = currentSlot;
+                button.name = LinearCanvasInventory.inv[currentSlot].Name;
+                button.GetComponentInChildren<Text>().text = LinearCanvasInventory.inv[currentSlot].Name;
             }
-
-            LinearCanvasInventory.inv.Add(ItemData.CreateItem(id));
-            int currentSlot = LinearCanvasInventory.inv.Count - 1;
-            GameObject button = Instantiate(buttonPrefab, parent) as GameObject; //parent is the Gridlaout object
-            button.GetComponent<SelectButton>().index = currentSlot;
-            button.name = LinearCanvasInventory.inv[currentSlot].Name;
-            button.GetComponentInChildren<Text>().text = LinearCanvasInventory.inv[currentSlot].Name;
         }
-
-
-        
-            
-
-        
-
-
-
-
-
     }
 
     public void InitiateGetItems()
